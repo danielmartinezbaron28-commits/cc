@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int sumar(int a, int b)
+{
+    return a + b;
+}
+
+void main(){
+    int m, n, opcio;
+    printf("Introduix el primer nÃºmero: ");
+    scanf("%d", &m);
+    printf("Introduix el segon nÃºmero: ");
+    scanf("%d", &n);
+    do{
+        printf("Quina operaciÃ³ vols fer --> 1 (suma), 2(resta), 3 (multiplicaciÃ³) i 4 (divisiÃ³): ");
+        scanf("%d", &opcio);
+    }while((opcio<1) || (opcio >4));
+
+    /* implementaciÃ³ del menÃº amb ifs */
+
+    if(opcio == 1) printf("La suma Ã©s: %d\n", sumar(m,n));
+
+    return;
+}
